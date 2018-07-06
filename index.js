@@ -87,6 +87,22 @@ function findTheCheese(foods){
   return "no cheese!"
 }
 
+
+function wordsThatStartWithB(words){
+  var output = []
+
+  for(var i = 0; i < words.length; i++){
+    if(words[i][0] === 'b'){
+      output.push(words[i])
+    }
+  }
+  return output;
+}
+
+wordsThatStartWithB(['bob', 'sally', 'jane']) // => ['bob']
+wordsThatStartWithB(['banana', 'bread', 'cherry']) // => ['banana', 'bread']
+wordsThatStartWithB(['happy', 'sad', 'laughing']) // => []
+
 /*
 
 function findTheCheese2(foods){
